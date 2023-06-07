@@ -1,0 +1,14 @@
+#! /bin/bash
+
+sudo cp /home/peix/hashpipe/uwb_hashpipe/*.sh /usr/local/bin/
+scp -P 5907 /home/peix/hashpipe/uwb_hashpipe/* uwb-gpu2:/home/peix/hashpipe/uwb_hashpipe/
+#scp -r -P 5907 /home/peix/hashpipe/uwb_hashpipe/ uwb-gpu1:/home/peix/hashpipe/ 
+#ssh -t -p 5907 uwb-gpu2 sudo cp /home/peix/hashpipe/uwb_hashpipe/*.sh /usr/local/bin/
+
+#for i in uwb-gpu1 uwb-gpu2       # Nanshan
+#do
+#echo ssh -p 5907 $i sudo cp /home/peix/hashpipe/uwb_hashpipe/*.sh /usr/local/bin/
+#
+#ssh -p 5907 $i sudo cp /home/peix/hashpipe/uwb_hashpipe/*.sh /usr/local/bin/
+#
+#done
